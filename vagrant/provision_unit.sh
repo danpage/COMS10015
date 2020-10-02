@@ -20,6 +20,11 @@ wget --quiet --output-document="visual_1.27-1_amd64.deb" http://bit.ly/visuallin
 sudo dpkg-deb -x visual_1.27-1_amd64.deb /opt/software/visual
 rm --force visual_1.27-1_amd64.deb
 
+# software install: ModuleSim
+wget --quiet --output-document="modulesim-0.4.jar" http://github.com/TeachingTechnologistBeth/ModuleSim/releases/download/0.4/ModuleSim.jar
+sudo install -D --target-directory=/opt/modulesim modulesim-0.4.jar
+rm --force modulesim-0.4.jar
+
 sudo mv /opt/software/visual/usr/local/bin/visual /opt/software/visual/bin
 sudo mv /opt/software/visual/usr/share            /opt/software/visual/share
 sudo rm --force --recursive /opt/software/visual/usr
