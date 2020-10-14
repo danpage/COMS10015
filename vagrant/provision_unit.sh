@@ -12,7 +12,7 @@ sudo apt-get --quiet --assume-yes install openjfx
 
 # software install: Logisim
 wget --quiet --output-document="logisim-generic-2.7.1.jar" https://sourceforge.net/projects/circuit/files/2.7.x/2.7.1/logisim-generic-2.7.1.jar
-sudo install -D --target-directory=/opt/logisim logisim-generic-2.7.1.jar  
+sudo install -D --target-directory=/opt/logisim/2.7.1 logisim-generic-2.7.1.jar  
 rm --force logisim-generic-2.7.1.jar
 
 # software install: VisUAL
