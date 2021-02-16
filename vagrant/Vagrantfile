@@ -15,15 +15,6 @@ Vagrant.configure( "2" ) do |config|
   # configure shared folder between host and guest
   config.vm.synced_folder "./share", "/home/vagrant/share"
 
-  # workaround for [1], which relates to a hard-coded path for log being
-  # included in packaged box (which then fails to boot if/when said path
-  # isn't valid).
-  #
-  # [1] https://github.com/hashicorp/vagrant/issues/9425
-  config.vm.provider "virtualbox" do |vb|
-    vb.customize [ 'modifyvm', :id, '--uartmode1', 'disconnected' ]
-  end
-
   # provisioning step: general-purpose prologue
   config.vm.provision "prologue", type: "shell", preserve_order: true, run: "once", path: "provision_prologue.sh",
                                   env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2020", "UNIT_PATH" => "COMS10015_2020_TB-1" }
