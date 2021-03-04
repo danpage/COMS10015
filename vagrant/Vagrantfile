@@ -13,7 +13,7 @@ Vagrant.configure( "2" ) do |config|
   config.ssh.forward_x11   = true
 
   # configure shared folder between host and guest
-  config.vm.synced_folder "./share", "/home/vagrant/share"
+  config.vm.synced_folder "./share", "/home/vagrant/share", owner: "vagrant", group: "vagrant"
 
   # provisioning step: general-purpose prologue
   config.vm.provision "prologue", type: "shell", preserve_order: true, run: "once", path: "provision_prologue.sh",
