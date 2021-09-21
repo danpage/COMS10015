@@ -1,34 +1,46 @@
- p            { text-align: justify; text-justify: inter-word; }
- li           { text-align: justify; text-justify: inter-word; }
+ p     { text-align: justify; text-justify: inter-word; }
+ li    { text-align: justify; text-justify: inter-word; }
 
- table        { border-collapse: collapse; empty-cells: show; }
+ table { border-collapse: collapse; empty-cells: show; }
 
- table.staff    tr {
+ table.staff      tr     {
    height : 3em;
  }
- table.material tr {
-   height : 6em;
+ table.staff      tr.gap {
+   height : 1em;
+ }
+ table.material   tr     {
+   height : 3em;
+ }
+ table.material   tr.gap {
+   height : 1em;
+ }
+ table.assessment tr     {
+   height : 3em;
+ }
+ table.assessment tr.gap {
+   height : 1em;
  }
 
- td.gap   {  
+ td.gap        {  
                                                                                               
  }
- td.blank { 
+ td.blank      { 
    border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #f1f1f1; 
  }
- td.lec-1 { 
+ td.lec-1      { 
    border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ccffff; 
  }
- td.lec-2 { 
+ td.lec-2      { 
    border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ccffcc; 
  }
- td.lec-3 { 
+ td.lec-3      { 
    border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffcccc; 
  }
- td.lab   { 
+ td.lab        { 
    border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffffcc; 
  }
- td.cw    { 
+ td.assessment { 
    border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffffcc; 
  }
 
@@ -52,7 +64,6 @@
    -webkit-transition: opacity .25s ease-in-out;
       -moz-transition: opacity .25s ease-in-out;
  }
-
  .extra:hover {
    opacity: 1.00;
  }
