@@ -12,7 +12,7 @@ sudo apt-get --quiet --assume-yes install openjfx
 
 # software install: Logisim
 wget --quiet --output-document="logisim-generic-2.7.1.jar" https://sourceforge.net/projects/circuit/files/2.7.x/2.7.1/logisim-generic-2.7.1.jar
-sudo install -D --target-directory=/opt/logisim/2.7.1 logisim-generic-2.7.1.jar  
+sudo install -D --target-directory="/opt/logisim/2.7.1" logisim-generic-2.7.1.jar  
 rm --force logisim-generic-2.7.1.jar
 
 # software install: VisUAL
@@ -22,7 +22,7 @@ rm --force visual_1.27-1_amd64.deb
 
 # software install: ModuleSim
 wget --quiet --output-document="modulesim-0.4.jar" http://github.com/TeachingTechnologistBeth/ModuleSim/releases/download/0.4/ModuleSim.jar
-sudo install -D --target-directory=/opt/modulesim modulesim-0.4.jar
+sudo install -D --target-directory="/opt/modulesim" modulesim-0.4.jar
 rm --force modulesim-0.4.jar
 
 sudo mv /opt/software/visual/usr/local/bin/visual /opt/software/visual/bin
