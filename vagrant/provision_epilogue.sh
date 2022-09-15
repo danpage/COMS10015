@@ -7,4 +7,4 @@
 # LICENSE.txt within the associated archive or repository).
 
 # package manager: clean 
-sudo apt-get clean
+sudo apt clean

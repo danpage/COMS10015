@@ -7,8 +7,13 @@
 # LICENSE.txt within the associated archive or repository).
 
 # software install: packaged software
-sudo apt-get --quiet --assume-yes install default-jre 
-sudo apt-get --quiet --assume-yes install openjfx
+sudo apt --quiet --assume-yes install default-jre 
+sudo apt --quiet --assume-yes install openjfx
+sudo apt --quiet --assume-yes install python3
+sudo apt --quiet --assume-yes install python3-pip
+sudo apt --quiet --assume-yes install python3-sympy
+sudo apt --quiet --assume-yes install python3-venv
+sudo apt --quiet --assume-yes install python3-wheel
 
 # software install: Logisim
 wget --quiet --output-document="logisim-generic-2.7.1.jar" https://sourceforge.net/projects/circuit/files/2.7.x/2.7.1/logisim-generic-2.7.1.jar
