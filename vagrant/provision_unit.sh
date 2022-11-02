@@ -37,12 +37,17 @@ sudo rm --force --recursive /opt/software/visual/usr
 # teaching material: download
 for SHEET in 1 2 3 4 5 ; do
   wget --quiet --directory-prefix /home/vagrant/${UNIT_CODE} http://assets.phoo.org/${UNIT_PATH}/csdsp/sheet/lab-${SHEET}_q.pdf
+  wget --quiet --directory-prefix /home/vagrant/${UNIT_CODE} http://assets.phoo.org/${UNIT_PATH}/csdsp/sheet/lab-${SHEET}_s.pdf
+done
+for SHEET in 1 2 3 4 5 ; do
   wget --quiet --directory-prefix /home/vagrant/${UNIT_CODE} http://assets.phoo.org/${UNIT_PATH}/csdsp/sheet/lab-${SHEET}_q.tar.gz
+  wget --quiet --directory-prefix /home/vagrant/${UNIT_CODE} http://assets.phoo.org/${UNIT_PATH}/csdsp/sheet/lab-${SHEET}_s.tar.gz
 done
 
 # teaching material: unarchive 
 for SHEET in 1 2 3 4 5 ; do
   tar --extract --gunzip --directory /home/vagrant/${UNIT_CODE} --file /home/vagrant/${UNIT_CODE}/lab-${SHEET}_q.tar.gz
+  tar --extract --gunzip --directory /home/vagrant/${UNIT_CODE} --file /home/vagrant/${UNIT_CODE}/lab-${SHEET}_s.tar.gz
 done
     
 # teaching material: permissions
