@@ -15,6 +15,7 @@
     plus associated plug-ins, as need be, e.g., by executing
 
     ```sh
+    vagrant plugin install vagrant-vbguest
     vagrant plugin install vagrant-disksize
     vagrant plugin install vagrant-reload
     ```
@@ -46,15 +47,15 @@
      - execute
 
        ```sh
-       git clone --branch COMS10015_2022 https://www.github.com/danpage/COMS10015.git ./COMS10015
+       git clone --branch COMS10015_2023 https://www.github.com/danpage/COMS10015.git ./COMS10015
        cd ./COMS10015/vagrant
        ```
 
        to 
        download
        a `Vagrantfile` 
-       that references a
-       bare [Ubuntu](https://app.vagrantup.com/ubuntu/boxes/bionic64)
+       that references an
+        [un-provisioned](https://app.vagrantup.com/boxomatic/boxes/rocky-8)
        base box,
 
      - [edit](https://www.vagrantup.com/docs/vagrantfile) 
